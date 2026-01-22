@@ -655,7 +655,7 @@
     </div>
 
     <!-- contact us -->
-    <section class="contact__area py-5  position-relative">
+    <section class="contact__area py-5  position-relative overflow-hidden">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-7 col-xl-7 col-lg-6">
@@ -670,65 +670,82 @@
                         <div class="contact__form">
                             <form id="contact-form">
                                 <div class="row">
+
+                                    <!-- Name -->
                                     <div class="col-xxl-6 col-xl-6 col-md-6">
                                         <div class="contact__form-input wow fadeInLeft" data-wow-delay=".2s">
-                                            <input name="name" type="text" placeholder="Your Name">
+                                            <input type="text" name="name" placeholder="Your Name" required>
                                         </div>
                                     </div>
+
+                                    <!-- Email -->
                                     <div class="col-xxl-6 col-xl-6 col-md-6">
                                         <div class="contact__form-input wow fadeInLeft" data-wow-delay=".4s">
-                                            <input name="email" type="email" placeholder="Your Email">
+                                            <input type="email" name="email" placeholder="Your Email" required>
                                         </div>
                                     </div>
+
+                                    <!-- Mobile -->
                                     <div class="col-xxl-6 col-xl-6 col-md-6">
                                         <div class="contact__form-input wow fadeInLeft" data-wow-delay=".6s">
-                                            <input name="phone" type="tel" placeholder="Mobile Number">
+                                            <input type="tel" name="phone" placeholder="Mobile Number" required>
                                         </div>
                                     </div>
+
+                                    <!-- State -->
                                     <div class="col-xxl-6 col-xl-6 col-md-6">
                                         <div class="contact__form-input wow fadeInLeft" data-wow-delay=".8s">
-                                            <select name="" id="">
-                                                <option value="" selected>Select State</option>
-                                                <option value="">Andhra Pradesh</option>
-                                                <option value="">Bihar</option>
-                                                <option value="">Karnataka</option>
-                                                <option value="">Delhi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-6 col-xl-6 col-md-6">
-                                        <div class="contact__form-input wow fadeInLeft" data-wow-delay=".9s">
-                                            <input name="subject" type="text" placeholder="City">
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-6 col-xl-6 col-md-6">
-                                        <div class="contact__form-input wow fadeInLeft" data-wow-delay="1s">
-                                            <select name="" id="">
-                                                <option value="" selected>Select A Course</option>
-                                                <option value="">BCA</option>
-                                                <option value="">BBA</option>
-                                                <option value="">MCA</option>
-                                                <option value="">MBA</option>
+                                            <select name="state" required>
+                                                <option value="" disabled selected>Select State</option>
+                                                <option value="andhra-pradesh">Andhra Pradesh</option>
+                                                <option value="bihar">Bihar</option>
+                                                <option value="delhi">Delhi</option>
+                                                <option value="karnataka">Karnataka</option>
                                             </select>
                                         </div>
                                     </div>
 
-                                    <div class="col-xxl-12">
-                                        <div class="contact__form-agree py-4 d-flex align-items-center mb-20 wow fadeInLeft"
-                                            data-wow-delay=".4s">
-                                            <input class="e-check-input" type="checkbox" id="e-agree" required>
-                                            <label class="e-check-label" for="e-agree">I agree to the<a href="#">Terms &
-                                                    Conditions</a></label>
+                                    <!-- City -->
+                                    <div class="col-xxl-6 col-xl-6 col-md-6">
+                                        <div class="contact__form-input wow fadeInLeft" data-wow-delay=".9s">
+                                            <input type="text" name="city" placeholder="City" required>
                                         </div>
                                     </div>
+
+                                    <!-- Course -->
+                                    <div class="col-xxl-6 col-xl-6 col-md-6">
+                                        <div class="contact__form-input wow fadeInLeft" data-wow-delay="1s">
+                                            <select name="course" required>
+                                                <option value="" disabled selected>Select A Course</option>
+                                                <option value="bca">BCA</option>
+                                                <option value="bba">BBA</option>
+                                                <option value="mca">MCA</option>
+                                                <option value="mba">MBA</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Terms -->
+                                    <div class="col-xxl-12">
+                                        <div class="contact__form-agree py-4 d-flex align-items-center wow fadeInLeft"
+                                            data-wow-delay=".4s">
+                                            <input type="checkbox" id="e-agree" required>
+                                            <label for="e-agree">
+                                                I agree to the <a href="#">Terms & Conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit -->
                                     <div class="col-xxl-12">
                                         <div class="contact__btn">
                                             <button type="submit" class="tp-btn">Send your message</button>
                                         </div>
-                                       
                                     </div>
+
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
